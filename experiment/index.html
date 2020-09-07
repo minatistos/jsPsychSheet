@@ -61,12 +61,14 @@ src: local('Open Sans Bold'), local('OpenSans-Bold'), url(data:font/ttf;base64,A
 
 
 
-<script src="jspsych-6.1.0/jspsych.js"></script>
-<script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
-<script src="jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
-<script src="jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
-<script src="jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
-<script src="jspsych-6.1.0/plugins/jspsych-survey-multi-select.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/jspsych.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-survey-multi-select.js"></script>
+<script src="https://minatistos.github.io/jsPsychSheet/jspsychsheet.js"></script>
+<link rel="stylesheet" href="https://minatistos.github.io/jsPsychSheet/jspsychsheet.css"/>
 <script type="text/javascript">
 
 /* 最初のメッセージ*/
@@ -183,7 +185,7 @@ var test = {
 /*条件刺激*/
   var cs = {
       type: 'image-keyboard-response',
-      stimulus: 'img/01.jpg',
+      stimulus: 'https://minatistos.github.io/jsPsychSheet/experiment/img/01.jpg',
       choices: jsPsych.NO_KEYS,
       trial_duration: 200,
       data: {test_part: 'cs'},
@@ -230,7 +232,7 @@ timeline.push(test_procedure);
 jsPsych.init({
   timeline: timeline,
   on_finish: function() {
-    jsPsych.data.displayData();
+     jsPsychSheet.uploadData(jsPsych.data.get().csv());
   }
 });
 </script>

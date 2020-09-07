@@ -16,12 +16,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 library(htmltools)
 tagList(
-tags$script(src='jspsych-6.1.0/jspsych.js'),
-tags$script(src='jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js'),
-tags$script(src='jspsych-6.1.0/plugins/jspsych-html-button-response.js'),
-tags$script(src='jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js'),
-tags$script(src='jspsych-6.1.0/plugins/jspsych-fullscreen.js'),
-tags$script(src='jspsych-6.1.0/plugins/jspsych-survey-multi-select.js')
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/jspsych.js'),
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js'),
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-html-button-response.js'),
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js'),
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-fullscreen.js'),
+tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-survey-multi-select.js'),
+tags$script(src="https://minatistos.github.io/jsPsychSheet/jspsychsheet.js"),
+tags$link(rel="stylesheet",href="https://minatistos.github.io/jsPsychSheet/jspsychsheet.css")
 )
 ```
 
@@ -141,7 +143,7 @@ var test = {
 /*条件刺激*/
   var cs = {
       type: 'image-keyboard-response',
-      stimulus: 'img/01.jpg',
+      stimulus: 'https://minatistos.github.io/jsPsychSheet/experiment/img/01.jpg',
       choices: jsPsych.NO_KEYS,
       trial_duration: 200,
       data: {test_part: 'cs'},
@@ -188,7 +190,7 @@ timeline.push(test_procedure);
 jsPsych.init({
   timeline: timeline,
   on_finish: function() {
-    jsPsych.data.displayData();
+     jsPsychSheet.uploadData(jsPsych.data.get().csv());
   }
 });
 ```
