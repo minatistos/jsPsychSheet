@@ -23,7 +23,8 @@ tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.
 tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-fullscreen.js'),
 tags$script(src='https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/plugins/jspsych-survey-multi-select.js'),
 tags$script(src="https://minatistos.github.io/jsPsychSheet/jspsychsheet.js"),
-tags$link(rel="stylesheet",href="https://minatistos.github.io/jsPsychSheet/jspsychsheet.css")
+tags$link(rel="stylesheet",href="https://minatistos.github.io/jsPsychSheet/jspsychsheet.css"),
+tags$link(rel="stylesheet", href="https://minatistos.github.io/jsPsychSheet/experiment/jspsych-6.1.0/css/jspsych.css" , type="text/css")
 )
 ```
 
