@@ -92,7 +92,7 @@ post_trial_gap: 1000
 /* 教示2 */
 var instructions2 = {
   type: "html-keyboard-response",
-  stimulus: "<p style='text-align:left'>練習終了です。それでは本番に入ります。</p>"+
+  stimulus: "<p style='text-align:right'>練習終了です。それでは本番に入ります。</p>"+
   "<p style='text-align:left'>画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</p>"+
   "<p style='text-align:left'>準備ができたらキーボードのキーをどれか押して課題を始めてください。</p>",
 post_trial_gap: 1000
