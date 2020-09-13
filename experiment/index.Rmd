@@ -83,7 +83,7 @@ var ic = {
 /* 教示 */
 var instructions = {
   type: "html-keyboard-response",
-  stimulus: "<p>この課題では,画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</p>"+
+  stimulus: "<p style='text-align:center'>この課題では,画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</p>"+
   "<p style='text-align:left'>最初に練習をしていただきます。準備ができたらキーボードのキーをどれか押して練習を始めてください。</p>",
 post_trial_gap: 1000
 };
