@@ -126,7 +126,7 @@ var ic = {
 /* 教示 */
 var instructions = {
   type: "html-keyboard-response",
-  stimulus: "<p style='text-align:center'>この課題では,画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</p>"+
+  stimulus: '<div style="position: absolute; left: 40%; top: 50%">この課題では,画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</div>'+
   "<p style='text-align:left'>最初に練習をしていただきます。準備ができたらキーボードのキーをどれか押して練習を始めてください。</p>",
 post_trial_gap: 1000
 };
@@ -134,7 +134,7 @@ post_trial_gap: 1000
 /* 教示2 */
 var instructions2 = {
   type: "html-keyboard-response",
-  stimulus: "<p style='text-align:left'>練習終了です。それでは本番に入ります。</p>"+
+  stimulus: "<p style='text-align:right'>練習終了です。それでは本番に入ります。</p>"+
   "<p style='text-align:left'>画面上にアスタリスク（＊）が現れたら出来るだけ早くLキーを押してください。</p>"+
   "<p style='text-align:left'>準備ができたらキーボードのキーをどれか押して課題を始めてください。</p>",
 post_trial_gap: 1000
@@ -218,7 +218,7 @@ var test_procedure = {
 
 /* タイムラインの設定 */
 var timeline = [];
-timeline.push(ic);
+//timeline.push(ic);
 timeline.push(fullscreen);
 timeline.push(instructions);
 timeline.push(practice);
