@@ -49,7 +49,7 @@ var fullscreen = {
 var ic = {
     type: 'survey-multi-select',
     questions: [{
-        prompt: '<span style = "font-size: 14pt"><b>以上の内容をよく読んで，理解した上で実験参加に同意いただける方はチェックをお願いします。同意されない方は，ウィンドウを閉じてください。</b></span>',
+        prompt: '<span style = "font-size: 40pt"><b>以上の内容をよく読んで，理解した上で実験参加に同意いただける方はチェックをお願いします。同意されない方は，ウィンドウを閉じてください。</b></span>',
         options: ['<span style = "font-size: 14pt">説明事項をよく読み，理解した上で，研究参加に同意します。</span>'],
         required: true,
         name: 'approval'
